@@ -1,0 +1,17 @@
+{
+    "name": "PWA",
+    "short_name": "pwa",
+    "description": "Github Page as a Progressive Web App",
+    "scope": "/pwa/",
+    "start_url": "/pwa/",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "standalone", 
+    "icons": [
+        {
+          "src": "/pwa/logo.png",
+          "type": "image/png",
+          "sizes": "225x225"
+        }
+    ]
+  }

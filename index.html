@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aplikacja PWA</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="/pwa/manifest.json" />
+    <link rel="canonical" href="https://Barthezzone1.github.io/pwa/" />
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="logo" href="logo.png" />
+    
+</head>
+<body>
+    <h1 class="text-center mt-1">Aplikacja PWA</h1>
+    <h2 class="text-center">Robert Durda i Bartłomiej Filas</h2>
+    <h2 class="text-center">Uniwersytet Ekonomiczny w Krakowie</h2>
+    <h2 class="text-center">Informatyka Stosowana</h2>
+
+    <script>
+        if (navigator.serviceWorker) {
+          navigator.serviceWorker.register (
+            '/pwa/sw.js',
+            {scope: '/pwa/'}
+          )
+        }
+    </script>
+
+    <form class="card container-fluid mt-2">
+        <div class="card-body">
+            <div class="mx-auto" style="width: 100px;">
+                <div class="card-body">
+                    <button type="button" onclick="location.href='./map.html'" class="btn btn-primary btn-lg" ref="./map.html">Map</button> 
+                </div>
+                <div class="card-body">
+                    <button type="button" onclick="location.href='./sos.html'" class="btn btn-warning btn-lg">SOS</button> 
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

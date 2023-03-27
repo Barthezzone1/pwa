@@ -16,17 +16,12 @@
    </head>
    
    <body>
+      <button class="button" onclick="sosButtonClickHandler">SOS</button>
       
-      <form class="card container-fluid mt-2"><div class="" id="sos-tab">
-         <div class="card-body">
-            <div class="mx-auto" style="width: 100px;">
-               <button type="button" class="btn btn-lg btn-primary" onclick="sosButtonClickHandler()">SOS</button>
-            </div>
-         </div>
-      </form>
+
       <script>
          function sosButtonClickHandler() {
-            window.navigator.vibrate([200, 100, 200, 100, 200, 100, 600, 100, 600, 100, 600, 100, 200, 100, 200, 100, 200]);
+            navigator.vibrate([200, 100, 200, 100, 200, 100, 600, 100, 600, 100, 600, 100, 200, 100, 200, 100, 200]);
          }
       </script>
 

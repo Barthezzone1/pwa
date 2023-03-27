@@ -5,7 +5,6 @@ const assets = [
   `${GHPATH}/index.html`,
   `${GHPATH}/map.html`,
   `${GHPATH}/sos.html`,
-  `${GHPATH}/sos.js`,
 ]
 
 
